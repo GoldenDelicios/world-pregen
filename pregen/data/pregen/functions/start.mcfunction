@@ -2,9 +2,10 @@
 
 function pregen:config
 
-#Target = Radius / ChunkVar
+#Target = Radius / ChunkVar (round to nearest int)
 scoreboard players set ChunkVar WorldPregen 160
-scoreboard players operation Target WorldPregen = Radius WorldPregen
+scoreboard players set Target WorldPregen 80
+scoreboard players operation Target WorldPregen += Radius WorldPregen
 scoreboard players operation Target WorldPregen /= ChunkVar WorldPregen
 
 #Set variables to 0
