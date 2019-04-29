@@ -39,6 +39,7 @@ execute at @s if score Dimension WorldPregen matches 1 in minecraft:the_end run 
 
 #Set progress bar, calculate progress
 bossbar add pregen:worldgen {"text":"World Gen Progress"}
+bossbar set pregen:worldgen style notched_10
 bossbar set pregen:worldgen players @s
 #	ProgressMax = ChunkVar * ((2t+1)^2 - (2t))
 scoreboard players operation ProgressMax WorldPregen = Target WorldPregen
