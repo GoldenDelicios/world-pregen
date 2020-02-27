@@ -13,3 +13,4 @@ gamemode survival @s
 gamemode creative @s
 tag @s remove WorldGen
 tag @s remove WorldGenStop
+tag @s remove WorldGenVerify
