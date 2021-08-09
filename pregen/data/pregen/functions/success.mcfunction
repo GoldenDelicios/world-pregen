@@ -4,5 +4,5 @@ setblock 0 255 0 minecraft:air
 tp @s ~ ~ ~
 
 #Success
-tellraw @s {"text":"Verified successfully", "color":"green", "hoverEvent":{"action":"show_text","value":"Verifying player was correctly teleported to starting position. This is needed to prevent errors."}}
+tellraw @s [{"text":"", "color":"green", "hoverEvent":{"action":"show_text","value":"Verifying player was correctly teleported to starting position. This is needed to prevent errors."}}, {"text":"Verified successfully after "}, {"score":{"name":"VerifyAttempts","objective":"WorldPregen"}}, {"text":" attempt(s)"}]
 tag @s remove WorldGenVerify
