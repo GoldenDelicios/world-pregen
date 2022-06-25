@@ -2,10 +2,11 @@
 Minecraft datapack: Pre-generate a Minecraft world before playing
 
 ## How to use:
-* Drop the datapack into your world's datapacks folder (`.minecraft/saves/<world>/datapacks/` for singleplayer).  
+* Drop the datapack into your world's datapacks folder. The usual path is `.minecraft/saves/<world>/datapacks` for singleplayer or `world/datapacks` for servers.
 * Type `/reload` or restart your world to enable the datapack.  
 
 ### To pregen the world:
+* Set your render distance to 5 chunks or greater.
 * Run `/function pregen:config`
 * Select your origin point. Usually you want this to be 0,0 but if you want to generate terrain centered far from 0,0, you can change it here.
 * Select the radius. This is not a circular radius but simply the distance in each axis you want to generate from the origin. e.g. a 5000 radius will approximately generate a 10k\*10k area, 5000 blocks in each direction.
