@@ -1,3 +1,3 @@
 #Set to progress of current dimension
-scoreboard players operation @s WorldPregen = End WorldPregen
+execute if score OriginX WorldPregen = PrevOriginX WorldPregen if score OriginZ WorldPregen = PrevOriginZ WorldPregen run scoreboard players operation @s WorldPregen = End WorldPregen
 function pregen:start/teleport

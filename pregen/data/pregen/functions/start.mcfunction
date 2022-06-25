@@ -13,6 +13,9 @@ scoreboard players set toLeft WorldPregen 0
 scoreboard players set toDown WorldPregen 0
 scoreboard players set toRight WorldPregen 0
 scoreboard players set toUp WorldPregen 0
+scoreboard players set @s WorldPregen 0
+scoreboard players set TimeElapsed WorldPregen 0
+scoreboard players set StepsCompleted WorldPregen 0
 
 #Set to progress of current dimension
 execute at @s if score Dimension WorldPregen matches 0 in minecraft:overworld run function pregen:start/overworld

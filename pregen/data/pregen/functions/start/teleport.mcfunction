@@ -20,3 +20,7 @@ gamemode creative @s
 
 #	Unload 0,0
 execute unless score WasNotForceLoaded WorldPregen matches 0 run forceload remove 0 0 0 0
+
+#	Store Origin
+scoreboard players operation PrevOriginX WorldPregen = OriginX WorldPregen
+scoreboard players operation PrevOriginZ WorldPregen = OriginZ WorldPregen
