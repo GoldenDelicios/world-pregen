@@ -26,7 +26,6 @@ Minecraft datapack: Pre-generate a Minecraft world before playing
 ####
 * When world generation stops, either by completing the radius or by clicking `[Stop]`, the datapack saves the progress made in the dimension, changes the player to creative mode and teleports them to spawn.
   * By saving the progress made, we avoid trying to generate the same chunks again the next time pregen is run.
-  * This makes the assumption that you don't use a different origin point for the same dimension. If you want to generate terrain at a different origin point, you can reset the progress saved by running `/scoreboard players set <Overworld/Nether/End> WorldPregen 0`
 
 ## Options
 Settings can be changed using the `WorldPregen` scoreboard or using `/function pregen:config`
