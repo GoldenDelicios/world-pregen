@@ -9,8 +9,8 @@ execute unless score Overworld WorldPregen matches 0.. run scoreboard players se
 execute unless score Nether WorldPregen matches 0.. run scoreboard players set Nether WorldPregen 0
 execute unless score End WorldPregen matches 0.. run scoreboard players set End WorldPregen 0
 
-tellraw @s {"text":"\n\n\nWorld Pregen by GoldenDelicios","color":"dark_aqua","italic":"true"}
-tellraw @s {"text":"Click here for help\n","color":"aqua","underlined":"true","clickEvent":{"action":"run_command","value":"/function pregen:help"},"hoverEvent":{"action":"show_text","value":"Get a user's manual"}}
+tellraw @s {"text":"\n\n\nWorld Pregen by GoldenDelicios","color":"dark_aqua","italic":true}
+tellraw @s {"text":"Click here for help\n","color":"aqua","underlined":true,"clickEvent":{"action":"run_command","value":"/function pregen:help"},"hoverEvent":{"action":"show_text","value":"Get a user's manual"}}
 tellraw @s [{"text":""},{"text":"Origin","color":"gold"},{"text":": ["},{"score":{"name":"OriginX","objective":"WorldPregen"},"color":"green","clickEvent":{"action":"suggest_command","value":"/scoreboard players set OriginX WorldPregen "},"hoverEvent":{"action":"show_text","value":"Change X value of world origin"}},{"text":"], ["},{"score":{"name":"OriginZ","objective":"WorldPregen"},"color":"green","clickEvent":{"action":"suggest_command","value":"/scoreboard players set OriginZ WorldPregen "},"hoverEvent":{"action":"show_text","value":"Change Z value of world origin"}},{"text":"]"}]
 tellraw @s [{"text":""},{"text":"Radius","color":"gold"},{"text":": ["},{"score":{"name":"Radius","objective":"WorldPregen"},"color":"green","clickEvent":{"action":"suggest_command","value":"/scoreboard players set Radius WorldPregen "},"hoverEvent":{"action":"show_text","value":"Distance in number of blocks away from origin to be generated"}},{"text":"]"}]
 
